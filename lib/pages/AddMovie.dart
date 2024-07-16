@@ -53,7 +53,7 @@ class _MovieInputPageState extends State<MovieInputPage> {
 
   Future<String> _uploadImage(File image) async {
     String fileName = DateTime.now().millisecondsSinceEpoch.toString();
-    Reference storageRef = FirebaseStorage.instanceFor(bucket: "gs://recept-test-e04ff.appspot.com").ref().child('movie_images').child(fileName);
+    Reference storageRef = FirebaseStorage.instanceFor(bucket: "gs://cinebuddy-f14d7.appspot.com").ref().child('movie_images').child(fileName);
     UploadTask uploadTask = storageRef.putFile(image);
     TaskSnapshot taskSnapshot = await uploadTask;
     return await taskSnapshot.ref.getDownloadURL();

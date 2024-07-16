@@ -178,7 +178,7 @@ class MovieDetailPage extends StatelessWidget {
 
   Future<String> _getProfilePhotoUrl(String userId) async {
     try {
-      var ref = firebase_storage.FirebaseStorage.instanceFor(bucket: "gs://recept-test-e04ff.appspot.com")
+      var ref = firebase_storage.FirebaseStorage.instanceFor(bucket: "gs://cinebuddy-f14d7.appspot.com")
           .ref()
           .child('users')
           .child(userId)

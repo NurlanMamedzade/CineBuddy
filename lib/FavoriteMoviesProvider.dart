@@ -57,3 +57,4 @@ class FavoriteMoviesProvider with ChangeNotifier {
     }
   }
 }
+

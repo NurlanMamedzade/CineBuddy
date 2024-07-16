@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">1:38542033277:android:9a33101972688e4a744c14</string>
+    <string name="firebase_database_url" translatable="false">https://cinebuddy-f14d7.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">38542033277</string>
+    <string name="google_api_key" translatable="false">AIzaSyAKNyQFi02SNqtoGQZxxLEHLHaofEkQQNc</string>
+    <string name="google_app_id" translatable="false">1:38542033277:android:9a33101972688e4a744c14</string>
+    <string name="google_crash_reporting_api_key" translatable="false"></string>
+    <string name="project_id" translatable="false">cinebuddy-f14d7</string>
+</resources>

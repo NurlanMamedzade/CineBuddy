@@ -71,7 +71,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _isUploading = true;
         });
         var userId = _currentUser.uid;
-        var ref = firebase_storage.FirebaseStorage.instanceFor(bucket: "gs://recept-test-e04ff.appspot.com").ref()
+        var ref = firebase_storage.FirebaseStorage.instanceFor(bucket: "gs://cinebuddy-f14d7.appspot.com").ref()
             .child('users')
             .child(userId)
             .child('profile.jpg');
