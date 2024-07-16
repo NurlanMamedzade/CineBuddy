@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38542033277",
+    "project_id": "cinebuddy-f14d7",
+    "storage_bucket": "cinebuddy-f14d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38542033277:android:9a33101972688e4a744c14",
+        "android_client_info": {
+          "package_name": "com.example.cinebuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKNyQFi02SNqtoGQZxxLEHLHaofEkQQNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
