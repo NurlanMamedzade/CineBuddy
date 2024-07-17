@@ -91,7 +91,7 @@ class MovieDetailPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'Müddət: ${updatedMovie['running_time']} dakika',
+                    'Müddət: ${updatedMovie['running_time']} dəqiqə',
                     style: TextStyle(fontSize: width/23,color: Colors.white60),
                   ),
                   SizedBox(height: 10),
