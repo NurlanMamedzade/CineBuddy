@@ -96,7 +96,7 @@ class MovieDetailPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'Janr: ${updatedMovie['genre'].join(" ")}',
+                    'Janr: ${updatedMovie['genre'].join(", ")}',
                     style: TextStyle(fontSize: width/23,color: Colors.white60),
                   ),
                   SizedBox(height: 10),

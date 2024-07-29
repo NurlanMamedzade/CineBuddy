@@ -33,6 +33,8 @@ class _MovieInputPageState extends State<MovieInputPage> {
     "Cinayət",
     "Triller",
     "Psixoloji",
+    "Fəlakət",
+    "Qanqster",
     "Animasiya",
     "Tarixi",
     "Bioqrafik",

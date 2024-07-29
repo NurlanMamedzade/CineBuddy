@@ -42,33 +42,42 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Zəhmət olmasa e-poçt ünvanınızı təsdiqləyin.',style: TextStyle(color: Colors.white,fontSize: 21),),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(24.0),
-                ),
-              ),
-              onPressed: () async {
-                await _auth.currentUser?.sendEmailVerification();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Təsdiqləmə məktubu göndərildi.')),
-                );
-              },
-              child: Text('Təsdiqləmə məktubunu yenidən göndər',style: TextStyle(color: Colors.white,)),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text('Zəhmət olmasa e-poçt ünvanınızı təsdiqləyin.',style: TextStyle(color: Colors.white,fontSize: 15),),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(24.0),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24.0),
+                  ),
                 ),
+                onPressed: () async {
+                  await _auth.currentUser?.sendEmailVerification();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Təsdiqləmə məktubu göndərildi.')),
+                  );
+                },
+                child: Text('Təsdiqləmə məktubunu yenidən göndər',style: TextStyle(color: Colors.white,)),
               ),
-              onPressed: () async {
-                await checkEmailVerified();
-              },
-              child: Text('E-poçtumu təsdiqlədim',style: TextStyle(color: Colors.white),),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24.0),
+                  ),
+                ),
+                onPressed: () async {
+                  await checkEmailVerified();
+                },
+                child: Text('E-poçtumu təsdiqlədim',style: TextStyle(color: Colors.white),),
+              ),
             ),
           ],
         ),
